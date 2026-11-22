@@ -1,0 +1,9 @@
+# 教师自动评分操作
+
+PR opened/synchronize/reopened/edited事件通过pull_request_target仅分派评分，不执行学生代码。grade在无网络、无凭据Docker中运行教师测试；publish和board作为同一工作流的依赖任务更新反馈与名单。学生无需申请写权限或Actions逐次批准。
+
+CLASS_ROSTER_JSON加密保存37人名单，仅教师端反馈和看板任务读取；经教师授权，公开表格显示完整姓名、学号和成绩。TRACKING_ISSUE_NUMBER指向看板Issue。名单不进入Git历史。
+
+看板按最新提交时间选取成绩；模拟账号单独记录。下载class-gradebook附件查看CSV、HTML。人工维护可运行board.yml。工作流故障保持可见，不按0分冒充成功。
+
+学生模板初始函数未完成，测试应失败；教师参考实现保存在本地.teacher，不在公开仓库提供本次控制层答案。实验二完整交换模块作为本次基础提供。
