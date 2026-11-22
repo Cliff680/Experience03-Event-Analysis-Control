@@ -2,6 +2,8 @@
 
 本实验使用1001至1004四个虚拟用户，以事件驱动程序控制实验二的T/S交换网络。学生补全4个函数，完成摘机、收号、振铃、应答、通话及释放。实验70分、报告30分，PR自动触发评分。
 
+[37人成绩实时跟踪表](https://github.com/jwentong/Experience03-Event-Analysis-Control/issues/1)显示完整姓名、学号和分项成绩。
+
 ## 教学材料
 - [学生实验规范Word](materials/实验三_PRD_用户事件号码分析与呼叫控制.docx)
 - [教师讲解PPT](materials/实验三_用户事件号码分析与呼叫控制_教师讲授版.pptx)
