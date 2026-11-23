@@ -2,6 +2,9 @@
 
 姓名：李柏霖
 学号：2024280042
+GitHub用户名：Cliff680
+Commit：e35b99d2d70786a1a315eda3e7ce82d864527729
+PR：[#23 现代交换实验03-李柏霖-2024280042](https://github.com/jwentong/Experience03-Event-Analysis-Control/pull/23)
 
 ## 原理与手算
 系统把摘挂机采样和拨号、超时等事件放进逻辑时间队列，按时间及入队顺序处理。主叫在0ms摘机后进入COLLECTING，并设置5000ms收号期限；100、200、300、400ms依次输入1、0、0、2，前缀逐步匹配，完整号码1002被预留后进入RINGING。振铃从400ms开始，因此无人应答时应在10400ms超时。若被叫在800ms摘机，框架只有在双向T/S连接成功后才进入CONNECTED；主叫在1000ms挂机后呼叫结束，被叫仍摘机则等待真实ONHOOK。
